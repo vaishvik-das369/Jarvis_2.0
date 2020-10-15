@@ -1,0 +1,13 @@
+def wishMe():
+    hour = int(datetime.datetime.now().hour)
+    if hour>=0 and hour<12:
+        # speak("Good Morning!")
+        speech_BY_machine("Good Morning!)
+
+    elif hour>=12 and hour<18:
+        speech_BY_machine("Good Afternoon!)
+
+    else:
+        speech_BY_machine("Good Evening!)
+    speech_BY_machine(f"   hello Sir,    i am jarvis your personal artificial intelligence assistant,  Please tell me how may I help you")  
+    engine.say("I am Jarvis Sir. Please tell me how may I help you")   
